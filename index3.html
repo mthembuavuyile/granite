@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Shining | Custom Headstones & Memorials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #111111;
+            --bg-panel: #1a1a1a;
+            --bg-light: #f5f4f0;
+            --text-white: #ffffff;
+            --text-muted: #b0b0b0;
+            --text-dark: #1a1a1a;
+            --gold: #c9a66b;
+            --gold-hover: #b89456;
+            --border-dark: #2e2e2e;
+            --border-light: #dcdad3;
+            --serif: 'Libre Baskerville', Georgia, serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 1. Top Utility Bar (Matches reference directly, clean & flat) */
+        .utility-bar {
+            background-color: #080808;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-bottom: 1px solid var(--border-dark);
+            padding: 8px 0;
+        }
+
+        .utility-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .utility-contact strong {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .utility-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .utility-links a:hover {
+            color: var(--text-white);
+        }
+
+        /* 2. Simple Solid Header */
+        .site-header {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        .site-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
+
+        .brand {
+            font-family: var(--serif);
+            font-size: 20px;
+            color: var(--text-white);
+            letter-spacing: -0.02em;
+        }
+
+        .brand span {
+            display: block;
+            font-family: var(--sans);
+            font-size: 11px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 2px;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 28px;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .main-nav a {
+            color: #d4d4d4;
+            padding: 28px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .main-nav a.active,
+        .main-nav a:hover {
+            color: var(--text-white);
+            border-bottom-color: var(--gold);
+        }
+
+        /* 3. Straightforward Hero Section */
+        .hero {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            padding: 72px 0 80px;
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 56px;
+            align-items: center;
+        }
+
+        .hero-eyebrow {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--gold);
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+            display: block;
+            margin-top: 4px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.65;
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 26px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--gold);
+            color: #111111;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--gold-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-white);
+            border-color: #555555;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-white);
+        }
+
+        /* Clean static preview box instead of floating glass */
+        .hero-visual {
+            background-color: var(--bg-panel);
+            border: 1px solid var(--border-dark);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .monument-preview-card {
+            width: 100%;
+            max-width: 320px;
+            background-color: #141414;
+            border: 1px solid #333;
+            padding: 36px 24px 28px;
+            border-radius: 120px 120px 0 0;
+            margin-bottom: 16px;
+        }
+
+        .monument-preview-card .sub {
+            font-family: var(--serif);
+            font-style: italic;
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .monument-preview-card .name {
+            font-family: var(--serif);
+            font-size: 22px;
+            color: #e5e5e5;
+            margin-bottom: 6px;
+        }
+
+        .monument-preview-card .dates {
+            font-size: 12px;
+            color: #888;
+            letter-spacing: 0.06em;
+            margin-bottom: 16px;
+        }
+
+        .monument-preview-card .epitaph {
+            font-size: 13px;
+            color: #aaa;
+            border-top: 1px solid #2b2b2b;
+            padding-top: 14px;
+        }
+
+        .monument-base {
+            width: 100%;
+            max-width: 360px;
+            height: 18px;
+            background-color: #262626;
+            border: 1px solid #3a3a3a;
+        }
+
+        .caption {
+            font-size: 12px;
+            color: #888;
+            margin-top: 14px;
+        }
+
+        /* 4. Practical Online Designer Section (Light background, crisp borders) */
+        .section {
+            padding: 64px 0;
+        }
+
+        .section-header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .section-header h2 {
+            font-family: var(--serif);
+            font-size: 26px;
+            font-weight: 400;
+        }
+
+        .section-header p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .builder-layout {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            border: 1px solid var(--border-light);
+            background-color: #ffffff;
+        }
+
+        .builder-controls {
+            padding: 28px;
+            border-right: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .field-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .field-group select,
+        .field-group input,
+        .field-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            font-family: var(--sans);
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            background-color: #fff;
+            color: #111;
+        }
+
+        .field-group select:focus,
+        .field-group input:focus,
+        .field-group textarea:focus {
+            outline: none;
+            border-color: #111;
+        }
+
+        .swatch-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .swatch-btn {
+            padding: 10px 8px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid #ccc;
+            background: #fafafa;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .swatch-btn.active {
+            border-color: #111;
+            background: #111;
+            color: #fff;
+        }
+
+        .builder-canvas {
+            background-color: #eceae4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            align-items: center;
+        }
+
+        .stone-stage {
+            my: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        .live-stone {
+            width: 340px;
+            min-height: 360px;
+            background-color: #181818;
+            color: #e8e8e8;
+            padding: 44px 28px 32px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #333;
+            transition: background-color 0.2s, color 0.2s, border-radius 0.2s;
+        }
+
+        /* Shapes */
+        .shape-arch {
+            border-radius: 150px 150px 0 0;
+        }
+
+        .shape-square {
+            border-radius: 2px 2px 0 0;
+        }
+
+        .shape-plaque {
+            min-height: 220px;
+            width: 380px;
+            border-radius: 2px;
+        }
+
+        /* Materials */
+        .mat-black {
+            background-color: #161616;
+            color: #e5e5e5;
+            border-color: #2e2e2e;
+        }
+
+        .mat-grey {
+            background-color: #525659;
+            color: #f0f0f0;
+            border-color: #3d4042;
+        }
+
+        .mat-bronze {
+            background-color: #3b2d22;
+            color: #dfbe89;
+            border-color: #594433;
+        }
+
+        .live-intro {
+            font-family: var(--serif);
+            font-style: italic;
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+
+        .live-name {
+            font-family: var(--serif);
+            font-size: 24px;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
+
+        .live-dates {
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .live-epitaph {
+            font-size: 13px;
+            opacity: 0.85;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 16px;
+            line-height: 1.5;
+        }
+
+        .live-base {
+            width: 390px;
+            height: 22px;
+            background-color: #2b2b2b;
+            border: 1px solid #444;
+        }
+
+        .canvas-footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #d8d5cd;
+            padding-top: 20px;
+            margin-top: 32px;
+            font-size: 14px;
+        }
+
+        .price-tag strong {
+            font-size: 18px;
+            color: #111;
+        }
+
+        /* 5. Simple 3-Column Info Row */
+        .info-strip {
+            border-top: 1px solid var(--border-light);
+            background-color: #ffffff;
+            padding: 48px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .info-item h3 {
+            font-family: var(--serif);
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .info-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--bg-dark);
+            color: var(--text-muted);
+            font-size: 13px;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-dark);
+        }
+
+        .site-footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .main-nav {
+                display: none;
+            }
+
+            .hero-grid,
+            .builder-layout,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .builder-controls {
+                border-right: none;
+                border-bottom: 1px solid var(--border-light);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Top Bar (Direct & Functional) -->
+    <div class="utility-bar">
+        <div class="container">
+            <div class="utility-contact">
+                <strong>Call us:</strong> 08 6191 0396 &nbsp;|&nbsp; <strong>Mobile:</strong> 0451 744 425
+            </div>
+            <div class="utility-links">
+                <a href="#designer">Cemetery Permits</a>
+                <a href="#designer">Track Order</a>
+                <a href="#designer">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Navigation Bar -->
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="brand">
+                Forever Shining
+                <span>Memorials &amp; Stonework</span>
+            </a>
+            <nav class="main-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#designer">Bronze Plaques</a>
+                <a href="#designer">Headstones</a>
+                <a href="#designer">Gallery</a>
+                <a href="#designer">Cemeteries</a>
+                <a href="#designer">Design Online</a>
+                <a href="#designer">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 3. Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="hero-eyebrow">Designed by you &middot; Crafted in Perth</div>
+                <h1>
+                    Custom Headstones, Monuments &amp; Plaques
+                    <span>You Can Design Online</span>
+                </h1>
+                <p>
+                    Create a personalised headstone or bronze plaque using our online builder, or ask our drafting team
+                    to lay it out for you at no extra cost. Choose the stone, size, and wording, and see your proof
+                    before we cut.
+                </p>
+                <div class="btn-row">
+                    <a href="#designer" class="btn btn-primary">Design Your Memorial</a>
+                    <a href="#designer" class="btn btn-outline">See How It Works</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="monument-preview-card">
+                    <div class="sub">In Loving Memory Of</div>
+                    <div class="name">Rachael Copper</div>
+                    <div class="dates">26/11/1970 &ndash; 11/12/2024</div>
+                    <div class="epitaph">Forever in our hearts and always remembered.</div>
+                </div>
+                <div class="monument-base"></div>
+                <div class="caption">Laser-etched black granite headstone &mdash; 760 &times; 760 mm</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Straightforward Customizer -->
+    <section id="designer" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Online Memorial Builder</h2>
+                <p>Adjust the options below to preview layout and estimated pricing.</p>
+            </div>
+
+            <div class="builder-layout">
+                <!-- Left Column: Normal Form Controls -->
+                <div class="builder-controls">
+                    <div class="field-group">
+                        <label>1. Select Shape</label>
+                        <div class="swatch-row" id="shapeGroup">
+                            <button type="button" class="swatch-btn active" data-shape="arch" data-price="1850">Arch
+                                Top</button>
+                            <button type="button" class="swatch-btn" data-shape="square" data-price="1750">Flat
+                                Top</button>
+                            <button type="button" class="swatch-btn" data-shape="plaque" data-price="980">Lawn
+                                Plaque</button>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label>2. Material</label>
+                        <div class="swatch-row" id="materialGroup">
+                            <button type="button" class="swatch-btn active" data-mat="black" data-add="0">Black
+                                Granite</button>
+                            <button type="button" class="swatch-btn" data-mat="grey" data-add="-100">Grey
+                                Granite</button>
+                            <button type="button" class="swatch-btn" data-mat="bronze" data-add="250">Cast
+                                Bronze</button>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="introInput">Heading Line</label>
+                        <input type="text" id="introInput" value="In Loving Memory Of">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="nameInput">Full Name</label>
+                        <input type="text" id="nameInput" value="Rachael Copper">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="datesInput">Dates</label>
+                        <input type="text" id="datesInput" value="26/11/1970 - 11/12/2024">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="epitaphInput">Inscription</label>
+                        <textarea id="epitaphInput" rows="2">Forever in our hearts and always remembered.</textarea>
+                    </div>
+                </div>
+
+                <!-- Right Column: Clean Preview Stage -->
+                <div class="builder-canvas">
+                    <div class="stone-stage">
+                        <div id="liveStone" class="live-stone shape-arch mat-black">
+                            <div id="outIntro" class="live-intro">In Loving Memory Of</div>
+                            <div id="outName" class="live-name">Rachael Copper</div>
+                            <div id="outDates" class="live-dates">26/11/1970 - 11/12/2024</div>
+                            <div id="outEpitaph" class="live-epitaph">Forever in our hearts and always remembered.</div>
+                        </div>
+                        <div id="liveBase" class="live-base"></div>
+                    </div>
+
+                    <div class="canvas-footer">
+                        <div class="price-tag">
+                            Estimated Total: <strong id="priceOutput">$1,850 AUD</strong> (incl. GST &amp; lettering)
+                        </div>
+                        <button type="button" class="btn btn-primary"
+                            onclick="alert('Specification saved. Our team will send a formal scale drawing.')">Request
+                            Scale Drawing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Simple 3-Column Details -->
+    <section class="info-strip">
+        <div class="container info-grid">
+            <div class="info-item">
+                <h3>1. Free Design Proof</h3>
+                <p>Before any stone is cut or bronze is cast, we send you an exact scale drawing to check with your
+                    family.</p>
+            </div>
+            <div class="info-item">
+                <h3>2. Cemetery Paperwork</h3>
+                <p>Every council and cemetery has strict size rules. We check compliance and handle the permit
+                    application for you.</p>
+            </div>
+            <div class="info-item">
+                <h3>3. Direct Delivery &amp; Fitting</h3>
+                <p>Crafted in our Perth workshop and shipped directly to cemeteries and monumental masons
+                    Australia-wide.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div>&copy; 2026 Forever Shining Memorials. All rights reserved.</div>
+            <div>Perth, Western Australia &middot; ABN 42 109 882 310</div>
+        </div>
+    </footer>
+
+    <script>
+        const liveStone = document.getElementById('liveStone');
+        const liveBase = document.getElementById('liveBase');
+        const priceOutput = document.getElementById('priceOutput');
+
+        let basePrice = 1850;
+        let matAdd = 0;
+
+        function updatePrice() {
+            const total = basePrice + matAdd;
+            priceOutput.textContent = '$' + total.toLocaleString() + ' AUD';
+        }
+
+        // Shape buttons
+        document.querySelectorAll('#shapeGroup .swatch-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#shapeGroup .swatch-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const shape = btn.dataset.shape;
+                basePrice = parseInt(btn.dataset.price, 10);
+
+                liveStone.classList.remove('shape-arch', 'shape-square', 'shape-plaque');
+                liveStone.classList.add('shape-' + shape);
+
+                liveBase.style.display = shape === 'plaque' ? 'none' : 'block';
+                updatePrice();
+            });
+        });
+
+        // Material buttons
+        document.querySelectorAll('#materialGroup .swatch-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#materialGroup .swatch-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const mat = btn.dataset.mat;
+                matAdd = parseInt(btn.dataset.add, 10);
+
+                liveStone.classList.remove('mat-black', 'mat-grey', 'mat-bronze');
+                liveStone.classList.add('mat-' + mat);
+                updatePrice();
+            });
+        });
+
+        // Text bindings
+        const bindings = [
+            ['introInput', 'outIntro'],
+            ['nameInput', 'outName'],
+            ['datesInput', 'outDates'],
+            ['epitaphInput', 'outEpitaph']
+        ];
+
+        bindings.forEach(([inputId, outputId]) => {
+            const inputEl = document.getElementById(inputId);
+            const outputEl = document.getElementById(outputId);
+            inputEl.addEventListener('input', () => {
+                outputEl.textContent = inputEl.value;
+            });
+        });
+    </script>
+</body>
+
+</html>

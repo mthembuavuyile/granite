@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everstone Granite &amp; Tombstones | Handcrafted Memorials South Africa</title>
+  <meta name="description" content="Everstone crafts timeless solid granite tombstones, memorials, and headstones with professional cemetery installation throughout South Africa.">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts: Cormorant Garamond & Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --gold: #cfac6c;
+      --gold-light: #e0be7e;
+      --gold-dark: #a5813f;
+      --bg-dark: #000000;
+      --bg-stage: #0d0e12;
+      --bg-card: #14151a;
+      --text-white: #f6f3ec;
+      --text-muted: #c6c5cc;
+      --text-dim: #8b8b95;
+      --border-dark: rgba(255, 255, 255, 0.12);
+      --border-gold: rgba(207, 172, 108, 0.35);
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background-color: var(--bg-stage);
+      color: var(--text-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* -------------------------------------------------------------
+       1. TOP ANNOUNCEMENT & CONTACT BAR
+    ------------------------------------------------------------- */
+    .top-bar {
+      background-color: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 12px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+    }
+
+    .top-bar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .top-phone-info {
+      color: #cfac6c;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .top-phone-info a {
+      color: #cfac6c;
+    }
+
+    .top-phone-info a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .top-phone-info .sep {
+      color: rgba(207, 172, 108, 0.4);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .top-region-tag {
+      color: #a0a0a8;
+      font-size: 11.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .top-social-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .top-social-list li {
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .top-social-list a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 38px;
+      color: #cfcece;
+      transition: color 0.2s, background-color 0.2s;
+    }
+
+    .top-social-list a:hover {
+      color: #cfac6c;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .top-social-list svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    /* -------------------------------------------------------------
+       2. MAIN NAVIGATION HEADER
+    ------------------------------------------------------------- */
+    .site-header {
+      background-color: #000000;
+      border-bottom: 1px solid var(--border-dark);
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      height: 88px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* Brand Logo */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand-text-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.05;
+    }
+
+    .brand-text-logo .logo-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: #f6f3ec;
+    }
+
+    .brand-text-logo .logo-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      color: #cfac6c;
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+
+    /* Main 3-Page Navigation Menu */
+    .main-nav {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      height: 100%;
+      gap: 10px;
+    }
+
+    .nav-item {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 16px;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #dddddd;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+
+    .nav-item.active .nav-link {
+      color: #ffffff;
+    }
+
+    .nav-item.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 16px;
+      right: 16px;
+      height: 3px;
+      background-color: #cfac6c;
+      z-index: 10;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 22px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background-color: #cfac6c;
+      color: #101116;
+      border-radius: 4px;
+      border: 1px solid #cfac6c;
+      transition: all 0.25s ease;
+    }
+
+    .header-cta-btn:hover {
+      background-color: #e0be7e;
+      border-color: #e0be7e;
+      transform: translateY(-1px);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: #dddddd;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu-btn svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+    }
+
+    /* -------------------------------------------------------------
+       3. HERO SECTION
+    ------------------------------------------------------------- */
+    .hero-stage {
+      position: relative;
+      overflow: hidden;
+      background-color: #000000;
+      min-height: calc(100vh - 126px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 0 100px;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      z-index: 0;
+      opacity: 0.38;
+      pointer-events: none;
+    }
+
+    .hero-shade {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: radial-gradient(circle at center, rgba(13, 14, 18, 0.72) 0%, rgba(0, 0, 0, 0.96) 100%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero-eyebrow {
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: #cfac6c;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(34px, 4.2vw, 62px);
+      line-height: 1.15;
+      color: #f6f3ec;
+      margin: 0 0 22px;
+    }
+
+    .hero-title .gold-accent {
+      display: block;
+      color: #cfac6c;
+      font-weight: 600;
+    }
+
+    .hero-lede {
+      font-family: 'Jost', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #c6c5cc;
+      max-width: 780px;
+      margin: 0 auto 34px;
+      font-weight: 300;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background-color: #cfac6c;
+      color: #101116;
+      padding: 15px 36px;
+      border-radius: 4px;
+      border: 1px solid #cfac6c;
+      box-shadow: 0 4px 18px rgba(207, 172, 108, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .btn-gold:hover {
+      background-color: #e0be7e;
+      border-color: #e0be7e;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(207, 172, 108, 0.4);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Jost', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 14px 34px;
+      border-radius: 4px;
+      border: 1.5px solid rgba(255, 255, 255, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .btn-ghost:hover {
+      background-color: #ffffff;
+      color: #101116;
+      border-color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------------------------------------------
+       4. CEMETERY INFINITE TICKER RIBBON (SOUTH AFRICA)
+    ------------------------------------------------------------- */
+    .cemetery-ribbon {
+      background-color: #14151a;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 14px 0;
+      border-top: 1px solid var(--border-gold);
+      border-bottom: 1px solid var(--border-gold);
+      position: relative;
+      z-index: 10;
+    }
+
+    .ribbon-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ribbon-scroll 55s linear infinite;
+    }
+
+    .cemetery-ribbon:hover .ribbon-track {
+      animation-play-state: paused;
+    }
+
+    .ribbon-set span {
+      color: #cfac6c;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: 2px;
+      font-size: 14.5px;
+      text-transform: uppercase;
+      margin: 0 22px;
+    }
+
+    .ribbon-dot {
+      color: #cfac6c;
+      font-size: 11px;
+    }
+
+    @keyframes ribbon-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* -------------------------------------------------------------
+       5. BROCHURE COLLECTION SHOWCASE (CLEAN IMAGE CARDS)
+    ------------------------------------------------------------- */
+    .showcase-sec {
+      padding: 90px 0;
+      background-color: #0d0e12;
+    }
+
+    .sec-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 55px;
+    }
+
+    .sec-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #cfac6c;
+      margin-bottom: 10px;
+    }
+
+    .sec-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(28px, 3.2vw, 44px);
+      font-weight: 500;
+      color: #f6f3ec;
+      margin-bottom: 14px;
+    }
+
+    .sec-desc {
+      color: #c6c5cc;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .brochure-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .brochure-card {
+      background-color: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .brochure-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-gold);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+    }
+
+    .brochure-img-box {
+      width: 100%;
+      height: 290px;
+      position: relative;
+      background-color: #050608;
+      overflow: hidden;
+    }
+
+    .brochure-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .brochure-card:hover .brochure-img-box img {
+      transform: scale(1.05);
+    }
+
+    .brochure-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 1px solid var(--border-gold);
+      color: #cfac6c;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 2px;
+      backdrop-filter: blur(4px);
+    }
+
+    .brochure-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .brochure-content h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #f6f3ec;
+      margin-bottom: 8px;
+    }
+
+    .brochure-content p {
+      color: #a4a3ab;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .brochure-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 16px;
+    }
+
+    .brochure-stone-type {
+      font-size: 12px;
+      color: #cfac6c;
+      font-weight: 500;
+    }
+
+    .brochure-link {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brochure-link:hover {
+      color: #cfac6c;
+    }
+
+    .brochure-action-row {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* -------------------------------------------------------------
+       6. CRAFTSMANSHIP & BROCHURE SUPPORT STRIP
+    ------------------------------------------------------------- */
+    .support-sec {
+      background-color: #101116;
+      border-top: 1px solid var(--border-gold);
+      border-bottom: 1px solid rgba(207, 172, 108, 0.2);
+      padding: 65px 0;
+    }
+
+    .ds-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .ds-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: #cfac6c;
+      margin-bottom: 12px;
+    }
+
+    .ds-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(28px, 3.2vw, 44px);
+      font-weight: 500;
+      line-height: 1.15;
+      color: #f6f3ec;
+      margin-bottom: 16px;
+    }
+
+    .ds-heading span {
+      display: block;
+      color: #cfac6c;
+    }
+
+    .ds-desc {
+      color: #d2d1d8;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .ds-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+    }
+
+    .ds-btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 420px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background-color: #cfac6c;
+      color: #101116;
+      padding: 16px 30px;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .ds-btn-cta:hover {
+      background-color: #e0be7e;
+      transform: translateY(-2px);
+    }
+
+    .ds-call-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #f6f3ec;
+    }
+
+    .ds-call-link svg {
+      width: 28px;
+      height: 28px;
+      color: #cfac6c;
+    }
+
+    .ds-call-link b {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .ds-call-link b em {
+      font-style: normal;
+      color: #cfac6c;
+    }
+
+    .ds-call-link i {
+      display: block;
+      font-style: normal;
+      font-size: 13px;
+      color: #c6c5cc;
+    }
+
+    .ds-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+      margin-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+    }
+
+    .ds-feat {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .ds-feat svg {
+      width: 22px;
+      height: 22px;
+      color: #cfac6c;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .ds-feat b {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #f6f3ec;
+      margin-bottom: 2px;
+    }
+
+    .ds-feat i {
+      display: block;
+      font-style: normal;
+      font-size: 12px;
+      color: #b9b8bf;
+      line-height: 1.4;
+    }
+
+    /* -------------------------------------------------------------
+       7. GRANITE VARIETIES (SOUTH AFRICAN STONE)
+    ------------------------------------------------------------- */
+    .stone-sec {
+      padding: 85px 0;
+      background-color: #08090b;
+    }
+
+    .stone-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+    }
+
+    .stone-card {
+      background: #121318;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      padding: 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .stone-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-4px);
+    }
+
+    .stone-swatch {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      border: 2px solid var(--border-gold);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .swatch-rustenburg {
+      background: radial-gradient(circle at 30% 30%, #303036, #121214 70%);
+    }
+
+    .swatch-belfast {
+      background: radial-gradient(circle at 30% 30%, #1e1e24, #050505 80%);
+    }
+
+    .swatch-african-red {
+      background: radial-gradient(circle at 30% 30%, #8b3a32, #401511 80%);
+    }
+
+    .swatch-pearl-grey {
+      background: radial-gradient(circle at 30% 30%, #a4a5ac, #505259 80%);
+    }
+
+    .stone-card h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      color: #f6f3ec;
+      margin-bottom: 6px;
+    }
+
+    .stone-card p {
+      font-size: 13px;
+      color: #a4a3ab;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       8. LUXURY FOOTER
+    ------------------------------------------------------------- */
+    .site-footer {
+      background-color: #050608;
+      border-top: 1px solid rgba(207, 172, 108, 0.25);
+      padding: 70px 0 35px;
+      color: #a4a3ab;
+      font-size: 13.5px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #f6f3ec;
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul a:hover {
+      color: #cfac6c;
+      padding-left: 3px;
+    }
+
+    .footer-about p {
+      line-height: 1.7;
+      margin-top: 14px;
+      max-width: 320px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-contact-item svg {
+      width: 17px;
+      height: 17px;
+      color: #cfac6c;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer-social-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 4px;
+      background: #14151a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cfcece;
+      transition: all 0.2s;
+    }
+
+    .footer-social-btn:hover {
+      color: #cfac6c;
+      border-color: var(--border-gold);
+      transform: translateY(-2px);
+    }
+
+    .footer-social-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 12.5px;
+      color: #7b7b85;
+    }
+
+    /* -------------------------------------------------------------
+       9. MOBILE DRAWER NAVIGATION
+    ------------------------------------------------------------- */
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 320px;
+      height: 100vh;
+      background: #101116;
+      border-left: 1px solid var(--border-gold);
+      z-index: 10000;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.35s ease;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .mobile-drawer.open {
+      right: 0;
+    }
+
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+
+    .drawer-close {
+      background: none;
+      border: none;
+      color: #cfac6c;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .drawer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .drawer-nav a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #e5e5e5;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    .drawer-nav a:hover {
+      color: #cfac6c;
+    }
+
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+
+    .drawer-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .brochure-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stone-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .main-nav, .header-cta-btn {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .ds-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .ds-features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .top-phone-info {
+        font-size: 11px;
+      }
+      .top-region-tag {
+        display: none;
+      }
+      .brochure-grid {
+        grid-template-columns: 1fr;
+      }
+      .stone-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement & Phone Bar -->
+  <aside class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-phone-info">
+        <span>Call: <a href="tel:+27114932810">011 493 2810</a></span>
+        <span class="sep">|</span>
+        <span>WhatsApp: <a href="https://wa.me/27825550192" target="_blank" rel="noopener">+27 82 555 0192</a></span>
+      </div>
+
+      <div class="top-actions">
+        <span class="top-region-tag">South Africa Nationwide Delivery &amp; Installation</span>
+
+        <!-- Social Icons (Live Facebook & Instagram) -->
+        <ul class="top-social-list">
+          <li>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Rebranded Everstone Logo -->
+      <a href="index2.html" class="brand-logo" aria-label="Everstone Granite and Tombstones">
+        <div class="brand-text-logo">
+          <span class="logo-name">EVERSTONE</span>
+          <span class="logo-sub">GRANITE &amp; TOMBSTONES</span>
+        </div>
+      </a>
+
+      <!-- 3-Page Navigation Menu -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="index2.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalogue.html" class="nav-link">TOMBSTONES &amp; GRANITE</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Request Quote Button & Mobile Trigger -->
+      <div class="header-actions">
+        <a href="contact.html" class="header-cta-btn">REQUEST A QUOTE</a>
+        <button class="mobile-menu-btn" id="openDrawerBtn" aria-label="Open mobile menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-text-logo">
+        <span class="logo-name" style="font-size: 22px;">EVERSTONE</span>
+        <span class="logo-sub">GRANITE &amp; TOMBSTONES</span>
+      </div>
+      <button class="drawer-close" id="closeDrawerBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index2.html" style="color: #cfac6c;">HOME</a></li>
+      <li><a href="catalogue.html">TOMBSTONES &amp; GRANITE</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <p style="color: #cfac6c; font-size: 13px; margin-bottom: 8px;">Call: 011 493 2810</p>
+      <p style="color: #c6c5cc; font-size: 13px; margin-bottom: 16px;">WhatsApp: +27 82 555 0192</p>
+      <a href="contact.html" class="btn-gold" style="width: 100%; text-align: center; font-size: 12px; padding: 12px 16px;">Request a Quote</a>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-stage">
+      <img
+        class="hero-bg-img"
+        src="assets/hero-memorial.jpg"
+        alt="Everstone Granite Tombstones &amp; Memorials South Africa"
+        fetchpriority="high"
+      >
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">PREMIUM MEMORIALS &middot; CRAFTED IN SOUTH AFRICA</p>
+        <h1 class="hero-title">
+          Timeless Granite Tombstones
+          <span class="gold-accent">Built to Honour Every Legacy</span>
+        </h1>
+        <p class="hero-lede">
+          Everstone designs, carves, and installs premium solid granite headstones and monuments across South Africa. Choose from our complete brochure collection or send us your memorial requirements for a personal quotation.
+        </p>
+        <div class="hero-btns">
+          <a href="catalogue.html" class="btn-gold">VIEW OUR CATALOGUE</a>
+          <a href="contact.html" class="btn-ghost">REQUEST A QUOTE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUTH AFRICAN CEMETERY TICKER RIBBON -->
+    <div class="cemetery-ribbon" aria-label="Approved Cemeteries Across South Africa">
+      <div class="ribbon-track">
+        <span class="ribbon-set">
+          <span>Westpark Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Avalon Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Heroes Acre</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Rebecca Street Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Stellawood Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Maitland Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Nasrec Memorial Park</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Fourways Memorial Park</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Nationwide South Africa Delivery &amp; Cemetery Installation</span>
+          <span class="ribbon-dot">&#10022;</span>
+        </span>
+        <!-- Duplicated set for seamless loop -->
+        <span class="ribbon-set" aria-hidden="true">
+          <span>Westpark Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Avalon Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Heroes Acre</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Rebecca Street Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Stellawood Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Maitland Cemetery</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Nasrec Memorial Park</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Fourways Memorial Park</span>
+          <span class="ribbon-dot">&#10022;</span>
+          <span>Nationwide South Africa Delivery &amp; Cemetery Installation</span>
+          <span class="ribbon-dot">&#10022;</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- BROCHURE COLLECTION SHOWCASE (SIMPLE IMAGE CARDS) -->
+    <section class="showcase-sec">
+      <div class="container">
+        <div class="sec-header">
+          <p class="sec-eyebrow">OUR BROCHURE COLLECTION</p>
+          <h2 class="sec-title">Dignified Memorials in Solid Granite</h2>
+          <p class="sec-desc">
+            Browse our core tombstone and monument ranges below. Every piece is cut from grade-A granite with diamond polishing and bespoke hand or laser inscription.
+          </p>
+        </div>
+
+        <div class="brochure-grid">
+          <!-- Card 1: Single Headstone -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Classic Range</span>
+              <img src="assets/mon-single.jpg" alt="Single Granite Headstone" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Single Headstone Memorials</h3>
+              <p>Traditional and modern upright headstones with tailored inscriptions, photo ceramic plaques, and matching flower vases.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Rustenburg Black Granite</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Double Monument -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Family Monuments</span>
+              <img src="assets/mon-double.jpg" alt="Double Granite Monument" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Companion &amp; Double Monuments</h3>
+              <p>Generous twin designs and shared family memorials carved with dual inscriptions, crosses, and custom motifs.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Belfast &amp; Zimbabwe Black</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Full Kerbset & Slabs -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Executive Full Kerb</span>
+              <img src="assets/mon-curb.jpg" alt="Full Kerbset Tombstone" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Full Ledger &amp; Kerbset Slabs</h3>
+              <p>Complete ground-level granite ledgers, kerbing, and top covers providing complete protection and majestic cemetery presence.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Solid Polished Slab</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Angel & Cherub Memorials -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Sculpted Work</span>
+              <img src="assets/mon-child.jpg" alt="Angel and Child Tombstone" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Angel &amp; Sculpted Headstones</h3>
+              <p>Delicately sculpted angel figures, heart-shaped tablets, and teddy motifs carved with utmost compassion and reverence.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Fine Hand-Sculpted Granite</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Memorial Plaques -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Cremation &amp; Wall</span>
+              <img src="assets/mon-plaque.jpg" alt="Granite Memorial Plaque" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Granite Wall Plaques &amp; Tablets</h3>
+              <p>Compact granite and bronze plaques for memorial walls, gardens of remembrance, or placement on existing family graves.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Deep Laser Inscription</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Custom Executive Monument -->
+          <article class="brochure-card">
+            <div class="brochure-img-box">
+              <span class="brochure-tag">Custom Architecture</span>
+              <img src="assets/WhatsApp Image 2026-09-30 at 10.31.21.jpeg" alt="Executive Custom Granite Tombstone" loading="lazy">
+            </div>
+            <div class="brochure-content">
+              <h3>Bespoke Custom Monuments</h3>
+              <p>Multi-tiered pillars, temple designs, and distinct architectural stone works custom-manufactured to your exact dimensions.</p>
+              <div class="brochure-card-footer">
+                <span class="brochure-stone-type">Multi-Tone Granite</span>
+                <a href="catalogue.html" class="brochure-link">View Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="brochure-action-row">
+          <a href="catalogue.html" class="btn-gold">BROWSE FULL 2026 CATALOGUE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUTH AFRICAN GRANITE VARIETIES -->
+    <section class="stone-sec">
+      <div class="container">
+        <div class="sec-header">
+          <p class="sec-eyebrow">NATURAL STONE SELECTION</p>
+          <h2 class="sec-title">Premium South African &amp; Imported Granite</h2>
+          <p class="sec-desc">
+            Granite is one of nature’s hardest minerals. Our stone selections resist weathering, acid rain, and sun exposure to retain their mirror polish for decades.
+          </p>
+        </div>
+
+        <div class="stone-grid">
+          <div class="stone-card">
+            <div class="stone-swatch swatch-rustenburg"></div>
+            <h4>Rustenburg Black</h4>
+            <p>South Africa’s premier dark granite. Fine-grained with high density, perfect for gold leaf lettering.</p>
+          </div>
+          <div class="stone-card">
+            <div class="stone-swatch swatch-belfast"></div>
+            <h4>Belfast Black</h4>
+            <p>Deep jet black with uniform texture. Unmatched contrast for laser photo engraving and portraits.</p>
+          </div>
+          <div class="stone-card">
+            <div class="stone-swatch swatch-african-red"></div>
+            <h4>African Red</h4>
+            <p>Rich terracotta and ruby mineral patterns. A distinguished, regal choice for executive family ledgers.</p>
+          </div>
+          <div class="stone-card">
+            <div class="stone-swatch swatch-pearl-grey"></div>
+            <h4>Platinum Pearl</h4>
+            <p>Silver and slate crystalline texture. Highly reflective, low-maintenance, and resilient to all weather.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BROCHURE SUPPORT & ORDER PROCESS -->
+    <section class="support-sec">
+      <div class="container ds-grid">
+        <div class="ds-left">
+          <p class="ds-eyebrow">BROCHURE CONSULTATION</p>
+          <h2 class="ds-heading">
+            Simple, dignified ordering.
+            <span>We guide you step by step.</span>
+          </h2>
+          <p class="ds-desc">
+            Ordering a memorial should be calm and straightforward. Send us your chosen style from our brochure, your preferred wording, and any photo. Our team prepares a complimentary layout proof for your family’s approval before any stone carving begins.
+          </p>
+        </div>
+
+        <div class="ds-actions">
+          <a href="contact.html" class="ds-btn-cta">
+            Request a Free Quote &amp; Proof
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+
+          <a href="tel:+27114932810" class="ds-call-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/>
+            </svg>
+            <span>
+              <b>Call <em>011 493 2810</em></b>
+              <i>Direct consultation with our South African team</i>
+            </span>
+          </a>
+
+          <div class="ds-features-grid">
+            <div class="ds-feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              <div>
+                <b>Free Digital Proof</b>
+                <i>See exact wording and layout before stone carving.</i>
+              </div>
+            </div>
+            <div class="ds-feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+              <div>
+                <b>Cemetery Permits</b>
+                <i>We handle municipal permits &amp; compliance paperwork.</i>
+              </div>
+            </div>
+            <div class="ds-feat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+              <div>
+                <b>Installation Guarantee</b>
+                <i>Solid reinforced foundation &amp; lifetime polish durability.</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col footer-about">
+          <div class="brand-text-logo">
+            <span class="logo-name" style="font-size: 24px;">EVERSTONE</span>
+            <span class="logo-sub">GRANITE &amp; TOMBSTONES</span>
+          </div>
+          <p>
+            Honouring cherished memories with finely carved solid granite memorials, headstones, and full monuments across South Africa.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Everstone on Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Everstone on Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="catalogue.html">Tombstones &amp; Granite</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Collections -->
+        <div class="footer-col">
+          <h4>Memorials</h4>
+          <ul>
+            <li><a href="catalogue.html">Single Headstones</a></li>
+            <li><a href="catalogue.html">Double Monuments</a></li>
+            <li><a href="catalogue.html">Full Kerbset Slabs</a></li>
+            <li><a href="catalogue.html">Granite Wall Plaques</a></li>
+            <li><a href="catalogue.html">Custom Granite Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & South Africa -->
+        <div class="footer-col">
+          <h4>Contact &amp; Showroom</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+            <div>
+              <span>Tel: 011 493 2810</span><br>
+              <span>WhatsApp: +27 82 555 0192</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span>Gauteng, South Africa</span><br>
+              <span>Serving All Municipal &amp; Private Cemeteries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Everstone Granite &amp; Tombstones. All rights reserved.</p>
+        <p>Premium Solid Granite Memorials &bull; South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Drawer Toggle
+    const openDrawerBtn = document.getElementById('openDrawerBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerBackdrop = document.getElementById('drawerBackdrop');
+
+    function toggleDrawer(open) {
+      if (open) {
+        mobileDrawer.classList.add('open');
+        drawerBackdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      } else {
+        mobileDrawer.classList.remove('open');
+        drawerBackdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (openDrawerBtn) openDrawerBtn.addEventListener('click', () => toggleDrawer(true));
+    if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', () => toggleDrawer(false));
+    if (drawerBackdrop) drawerBackdrop.addEventListener('click', () => toggleDrawer(false));
+  </script>
+</body>
+</html>
