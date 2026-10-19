@@ -1236,6 +1236,23 @@
         gap: 16px;
       }
 
+      /* Mobile Drawer */
+      .mobile-drawer {
+        width: min(320px, 86vw);
+      }
+      .drawer-close {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+      }
+      .drawer-nav a {
+        display: block;
+        padding: 10px 0;
+      }
+
       /* Mobile Footer */
       .site-footer {
         padding: 48px 0 24px;
@@ -1253,6 +1270,73 @@
 
       .container {
         padding: 0 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Extra compact mobile phones (360px - 430px) */
+      .top-bar {
+        padding: 8px 0;
+      }
+      .top-phone-info {
+        font-size: 10.5px;
+        gap: 6px 10px;
+        flex-wrap: wrap;
+        white-space: normal;
+        line-height: 1.45;
+      }
+      .site-header {
+        height: 64px;
+      }
+      .brand-text-logo .logo-name {
+        font-size: 20px;
+        letter-spacing: 0.12em;
+      }
+      .brand-text-logo .logo-sub {
+        font-size: 8px;
+        letter-spacing: 0.18em;
+      }
+      .hero-stage {
+        padding: 34px 0 44px;
+      }
+      .hero-title {
+        font-size: 25px;
+      }
+      .hero-title .gold-accent {
+        font-size: 23px;
+      }
+      .hero-lede {
+        font-size: 13.5px;
+        padding: 0;
+      }
+      .hero-btns {
+        max-width: 100%;
+      }
+      .brochure-img-box {
+        height: 210px;
+      }
+      .brochure-content {
+        padding: 16px;
+      }
+      .brochure-content h3 {
+        font-size: 19px;
+      }
+      .stone-card {
+        padding: 18px 14px;
+      }
+      .stone-card h3 {
+        font-size: 18px;
+      }
+      .ds-heading {
+        font-size: 24px;
+      }
+      .ds-btn-cta {
+        font-size: 12.5px;
+        padding: 14px 16px;
+        letter-spacing: 0.1em;
+      }
+      .ds-call-link b {
+        font-size: 20px;
       }
     }
   </style>
