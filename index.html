@@ -1027,7 +1027,9 @@
       visibility: visible;
     }
 
-    /* Responsive */
+    /* -------------------------------------------------------------
+       RESPONSIVE & MOBILE-FIRST OPTIMIZATIONS
+    ------------------------------------------------------------- */
     @media (max-width: 1024px) {
       .brochure-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1056,24 +1058,201 @@
       }
     }
 
-    @media (max-width: 640px) {
-      .top-phone-info {
-        font-size: 11px;
+    @media (max-width: 768px) {
+      /* Mobile Top Bar - clean single-line contact without squishing */
+      .top-actions {
+        display: none !important;
       }
-      .top-region-tag {
-        display: none;
+      .top-bar {
+        height: auto;
+        min-height: 36px;
+        padding: 6px 0;
+      }
+      .top-bar-container {
+        padding: 0 16px;
+        justify-content: center;
+      }
+      .top-phone-info {
+        font-size: 11.5px;
+        justify-content: center;
+        width: 100%;
+        gap: 12px;
+        white-space: nowrap;
+        letter-spacing: 0.2px;
+      }
+
+      /* Mobile Header */
+      .site-header {
+        height: 68px;
+      }
+      .header-container {
+        padding: 0 16px;
+      }
+      .brand-text-logo .logo-name {
+        font-size: 22px;
+        letter-spacing: 0.14em;
+      }
+      .brand-text-logo .logo-sub {
+        font-size: 8.5px;
+        letter-spacing: 0.24em;
+        margin-top: 2px;
+      }
+      .mobile-menu-btn {
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Mobile Hero Section */
+      .hero-stage {
+        min-height: auto;
+        padding: 44px 0 54px;
+      }
+      .hero-content {
+        padding: 0 16px;
+      }
+      .hero-eyebrow {
+        font-size: 10.5px;
+        letter-spacing: 0.22em;
+        margin-bottom: 12px;
+      }
+      .hero-title {
+        font-size: clamp(28px, 7.5vw, 40px);
+        line-height: 1.18;
+        margin: 0 0 16px;
+      }
+      .hero-title .gold-accent {
+        font-size: clamp(26px, 7vw, 38px);
+        margin-top: 4px;
+      }
+      .hero-lede {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        padding: 0 6px;
+      }
+      .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 12px;
+      }
+      .hero-btns .btn-gold,
+      .hero-btns .btn-ghost {
+        width: 100%;
+        padding: 13px 20px;
+        font-size: 12.5px;
+        letter-spacing: 0.12em;
+        text-align: center;
+      }
+
+      /* Mobile Ticker Ribbon */
+      .cemetery-ribbon {
+        padding: 10px 0;
+      }
+      .ribbon-set span {
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        margin: 0 14px;
+      }
+
+      /* Mobile Brochure Collection */
+      .showcase-sec {
+        padding: 50px 0;
+      }
+      .sec-header {
+        margin-bottom: 30px;
+      }
+      .sec-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.22em;
+      }
+      .sec-title {
+        font-size: 28px;
+        line-height: 1.2;
+      }
+      .sec-desc {
+        font-size: 14px;
+        line-height: 1.55;
       }
       .brochure-grid {
         grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .brochure-img-box {
+        height: 250px;
+      }
+      .brochure-content {
+        padding: 18px 20px;
+      }
+      .brochure-content h3 {
+        font-size: 20px;
+      }
+      .brochure-action-row {
+        margin-top: 32px;
+      }
+      .brochure-action-row .btn-gold {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      /* Mobile Stone Varieties */
+      .stone-sec {
+        padding: 50px 0;
       }
       .stone-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .stone-card {
+        padding: 22px 18px;
+      }
+
+      /* Mobile Support & Ordering */
+      .support-sec {
+        padding: 44px 0;
+      }
+      .ds-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .ds-heading {
+        font-size: 28px;
+        line-height: 1.2;
+      }
+      .ds-desc {
+        font-size: 14px;
+      }
+      .ds-btn-cta, .ds-call-link {
+        width: 100%;
+        justify-content: center;
+      }
+      .ds-features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      /* Mobile Footer */
+      .site-footer {
+        padding: 48px 0 24px;
       }
       .footer-grid {
         grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 36px;
       }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
       .container {
-        padding: 0 20px;
+        padding: 0 16px;
       }
     }
   </style>
